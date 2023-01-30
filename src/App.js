@@ -15,7 +15,12 @@ import ErrorPage from "./pages/errorPage/errorPage";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <NavBar />,
+    element: (
+      <div>
+        <NavBar />
+        <Footer />
+      </div>
+    ),
     errorElement: <ErrorPage />,
     children: [
       {
@@ -50,24 +55,6 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
-      <Footer />
-      {/* <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<NavBar />}>
-            <Route index element={<Home />} />
-            <Route path="services" element={<Services />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="privacy-policy" element={<PrivacyPolicy />} />
-            <Route
-              path="terms-and-conditions"
-              element={<TermsAndConditions />}
-            />
-            <Route path="*" element={<NotFound />} />
-          </Route>
-        </Routes>
-        <Header />
-        <Footer />
-      </BrowserRouter> */}
     </>
   );
 }

@@ -19,13 +19,13 @@ export default class Header extends Component {
               <Container fluid>
                 <Row>
                   <Col>
-                    <hr />
+                    <hr className="buttonHr"/>
                   </Col>
                   <Col lg="auto" className="center">
                     GET STARTED
                   </Col>
                   <Col>
-                    <hr />
+                    <hr className="buttonHr"/>
                   </Col>
                 </Row>
               </Container>
