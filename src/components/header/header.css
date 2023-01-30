@@ -1,0 +1,36 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.getStartedButton {
+  margin: 2%;
+  border-radius: 0%;
+  padding: 15px;
+  font-weight: bold;
+  align-items: center;
+  --bs-btn-hover-bg: black;
+}
+
+.headerTitle {
+  font-family: "EB Garamond", serif;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.headerSubtitle {
+  font-family: "EB Garamond", serif;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+
+hr {
+  width: 20px;
+  opacity: 1;
+}
