@@ -14,7 +14,7 @@ export default class AboutMe extends Component {
           <Row>
             <Col>Hi, I'm Tony</Col>
             <Col>
-              {/* <img src={selfPic} alt="Self" /> */}
+              <img src={selfPic} alt="Self" style={{ width: "50%" }} />
             </Col>
           </Row>
         </Container>
