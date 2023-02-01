@@ -19,7 +19,7 @@ export default class NavBar extends Component {
   render() {
     return (
       <>
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" style={{height: "8vh"}}>
           <Container>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

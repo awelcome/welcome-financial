@@ -11,7 +11,7 @@ export default class Header extends Component {
   render() {
     return (
       <>
-        <Container fluid>
+        <Container fluid style={{height: "30vh"}}>
           <Row className="headerTitle">Welcome Financial Co.</Row>
           <Row className="headerSubtitle">Welcome To Your Financial Future</Row>
           <Row className="center" lg="auto">
