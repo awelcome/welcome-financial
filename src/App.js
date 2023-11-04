@@ -9,7 +9,7 @@ import Footer from "./components/footer/footer";
 import Contact from "./pages/contact/contact";
 import PrivacyPolicy from "./pages/privacyPolicy/privacyPolicy";
 import Services from "./pages/services/services";
-import TermsAndConditions from "./pages/termsAndConditions/termsAndConditions";
+import ClientAgreement from "./pages/clientAgreement/clientAgreement";
 import ErrorPage from "./pages/errorPage/errorPage";
 
 const router = createBrowserRouter([
@@ -40,8 +40,8 @@ const router = createBrowserRouter([
         element: <PrivacyPolicy />,
       },
       {
-        path: "terms-and-conditions",
-        element: <TermsAndConditions />,
+        path: "client-agreement",
+        element: <ClientAgreement />,
       },
       {
         path: "*",

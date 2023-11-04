@@ -7,7 +7,7 @@ export default class Contact extends Component {
     return (
       <>
         <Container>
-          <p>Hello from Contact</p>
+          <p>Email me at welcomefinancialco@gmail.com</p>
         </Container>
       </>
     );

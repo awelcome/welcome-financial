@@ -1,3 +1,5 @@
+import "../../common.css";
+
 import React, { Component } from "react";
 
 import Container from "react-bootstrap/Container";
@@ -7,48 +9,78 @@ import Image from "react-bootstrap/Image";
 
 import selfPic from "./DSC_9011.jpg";
 
-export default class AboutMe extends Component {
-  render() {
-    return (
-      <>
-        <Container
-          fluid
-          style={{ backgroundColor: "black", color: "white", height: "48vh" }}
-        >
-          <Row>
-            <Col lg="6" style={{ padding: "3%" }}>
-              <Container>
-                <Row>
-                  <Col lg="4">Hi, I'm Tony</Col>
-                  <Col>
-                    <hr />
-                  </Col>
-                </Row>
-                <Row>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Sed pulvinar proin gravida hendrerit lectus. Tristique
-                  sollicitudin nibh sit amet commodo nulla facilisi. Sem
-                  fringilla ut morbi tincidunt augue interdum velit euismod in.
-                  Elit scelerisque mauris pellentesque pulvinar pellentesque
-                  habitant morbi tristique senectus. Sit amet consectetur
-                  adipiscing elit duis tristique sollicitudin nibh sit.
-                  Vestibulum sed arcu non odio euismod lacinia. Ligula
-                  ullamcorper malesuada proin libero nunc. Sit amet consectetur
-                  adipiscing elit duis tristique sollicitudin nibh. Ut tellus
-                  elementum sagittis vitae et leo. Sapien et ligula ullamcorper
-                  malesuada proin. Dui vivamus arcu felis bibendum ut tristique.
-                  Dignissim enim sit amet venenatis urna cursus eget nunc
-                  scelerisque.
-                </Row>
-              </Container>
-            </Col>
-            <Col lg="6">
-              <Image src={selfPic} alt="Self" style={{ width: "30%" }} />
-            </Col>
-          </Row>
-        </Container>
-      </>
-    );
-  }
-}
+const AboutMe = () => {
+  return (
+    <>
+      <Container fluid style={{ backgroundColor: "black", color: "white" }}>
+        <Row className="center">
+          <Col lg="7" style={{ paddingRight: "3%" }}>
+            <Container>
+              <Row style={{ alignItems: "center" }}>
+                <Col lg="4" className="center">
+                  <h1>Hi, I'm Tony</h1>
+                </Col>
+                <Col>
+                  <hr />
+                </Col>
+              </Row>
+              <Row>
+                <p>
+                  I have a passion for financial empowerment and personal
+                  growth, and I'm dedicated to your financial success. My
+                  journey in the world of personal finance began at an early
+                  age, taking my first job at 14 and was financially independent
+                  by the age of 17. Through research, helping others, and my own
+                  financial experiences, I've gained firsthand knowledge of the
+                  challenges and rewards of financial education.
+                </p>
+
+                <p>
+                  As a first-generation college graduate from Arizona State
+                  University's business school, I delved into a wide range of
+                  subjects, including finance, economics, accounting, and more.
+                  Beyond academics, I spent three years working in ASU's career
+                  services department, working with recruiters and helping
+                  individuals craft winning resumes and excel in interviews.
+                  I've also been on both sides of the hiring process, having
+                  worked with multiple Fortune 100 companies, which provides me
+                  with unique insights into what employers are seeking.
+                </p>
+
+                <p>
+                  In addition to my financial background, I work as a software
+                  developer, allowing me to blend technology and finance in my
+                  coaching. Growing up in a low-income household, I understand
+                  the importance of financial education. My mission is to bridge
+                  the knowledge gap and empower you with the tools to reach your
+                  financial goals.
+                </p>
+
+                <p>
+                  My fresh and modern approach to personal finance integrates
+                  experience, education, technology, and passion. I'm here to
+                  guide and support you on your journey to financial success.
+                  Let's embark on this journey together.
+                </p>
+              </Row>
+            </Container>
+          </Col>
+          <Col lg="4">
+            <Image
+              src={selfPic}
+              alt="Self"
+              style={{
+                width: "80%",
+                height: "auto",
+                display: "block",
+                overflow: "hidden",
+              }}
+            />
+          </Col>
+        </Row>
+      </Container>
+    </>
+  );
+};
+
+export default AboutMe;

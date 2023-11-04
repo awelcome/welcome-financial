@@ -9,11 +9,11 @@ import { useNavigate } from "react-router-dom";
 
 import "./footer.css";
 
-export default function Footer() {
+const Footer = () => {
   const navigate = useNavigate();
   return (
     <>
-      <Container fluid style={{height: "8vh"}}>
+      <Container fluid style={{ height: "8vh" }}>
         <Row className="center">
           <Col />
           <Col lg="10">
@@ -22,8 +22,8 @@ export default function Footer() {
           <Col />
         </Row>
         <Row className="center footerFont">
-          Copyright © {new Date().getFullYear()} Welcome Financial Co. LLC. -
-          All Rights Reserved.
+          Copyright © {new Date().getFullYear()} Welcome Financial LLC. - All
+          Rights Reserved.
         </Row>
         <Row className="legalButtons footerFont">
           <Col lg="auto">
@@ -31,6 +31,7 @@ export default function Footer() {
               variant="Link"
               onClick={() => {
                 navigate("/privacy-policy");
+                scrollToTop();
               }}
             >
               PRIVACY POLICY
@@ -40,14 +41,21 @@ export default function Footer() {
             <Button
               variant="Link"
               onClick={() => {
-                navigate("/terms-and-conditions");
+                navigate("/client-agreement");
+                scrollToTop();
               }}
             >
-              TERMS AND CONDITIONS
+              CLIENT AGREEMENT
             </Button>
           </Col>
         </Row>
       </Container>
     </>
   );
-}
+};
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" }); // 'smooth' provides a smooth scroll effect
+};
+
+export default Footer;
