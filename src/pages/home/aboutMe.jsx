@@ -1,6 +1,6 @@
 import "../../common.css";
 
-import React, { Component } from "react";
+import React from "react";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -70,7 +70,7 @@ const AboutMe = () => {
               src={selfPic}
               alt="Self"
               style={{
-                width: "80%",
+                width: "70%",
                 height: "auto",
                 display: "block",
                 overflow: "hidden",

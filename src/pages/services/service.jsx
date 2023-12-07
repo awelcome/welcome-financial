@@ -4,9 +4,9 @@ import Col from "react-bootstrap/Col";
 
 const Service = ({ name, price, description }) => {
   return (
-    <>
+    <div style={{margin: "0 0 10px 0"}}>
       <Row>
-        <Col>
+        <Col lg="10">
           <h4>{name.toUpperCase()}</h4>
         </Col>
         <Col>
@@ -16,7 +16,7 @@ const Service = ({ name, price, description }) => {
       <Row>
         <p>{description}</p>
       </Row>
-    </>
+    </div>
   );
 };
 

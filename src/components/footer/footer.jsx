@@ -13,7 +13,7 @@ const Footer = () => {
   const navigate = useNavigate();
   return (
     <>
-      <Container fluid style={{ height: "8vh" }}>
+      <Container fluid style={{ height: "8vh", marginBottom: "70px"}}>
         <Row className="center">
           <Col />
           <Col lg="10">
