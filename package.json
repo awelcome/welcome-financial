@@ -1,6 +1,7 @@
 {
   "name": "welcome-financial-site",
   "version": "0.1.0",
+  "homepage": "https://awelcome.github.io/welcome-financial",
   "private": true,
   "dependencies": {
     "@formspree/react": "^2.5.1",
