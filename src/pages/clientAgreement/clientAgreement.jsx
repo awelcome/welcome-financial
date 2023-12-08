@@ -35,9 +35,10 @@ export default class ClientAgreement extends Component {
               outlined on the "Services" page before the service is provided.
               Payment can be made via Zelle to welcomefinancialco@gmail.com. All
               fees are non-refundable. The exception to this is if a service is
-              not provided in the timeframe that the client paid for in which
-              the client will be refunded the difference between the selected
-              accelerated service and the baseline service provided.
+              not provided in the timeframe that the client paid for (timeline
+              begins when client submits payment) in which the client will be
+              refunded the difference between the selected accelerated service
+              and the baseline service provided.
             </p>
             <h5>No Guarantees:</h5>
             <p>

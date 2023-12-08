@@ -8,14 +8,19 @@ const Services = () => {
   return (
     <Container
       fluid
-      style={{ backgroundColor: "black", color: "white", marginTop: "50px", paddingBottom: "50px" }}
+      style={{
+        backgroundColor: "black",
+        color: "white",
+        marginTop: "50px",
+        paddingBottom: "50px",
+      }}
     >
       <Container>
         <Row className="center">
           <Heading dark text="Services and Pricing" />
         </Row>
         <Service
-          name="Initial Consultion"
+          name="Initial Consultation"
           price="FREE"
           description="Meet either in person or virtually to get to know each other and discuss what services may be most beneficial for your situation."
         />
@@ -54,7 +59,7 @@ const Services = () => {
         <Service
           name="Custom Built Resume - Rushed"
           price="$175"
-          description="Same service as above, but I get it back to you within 48 hours"
+          description="Same service as above, but I get it back to you within 48 hours of receiving payment"
         />
         <Service
           name="Interview Preparation"
