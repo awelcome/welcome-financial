@@ -1,0 +1,38 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 991.98px) {
+  .intro {
+    padding-top: 15px;
+  }
+
+  .selfImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .selfImage {
+    width: -webkit-fill-available;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .selfImage {
+    width: -webkit-fill-available;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  p {
+    font-size: large;
+  }
+}

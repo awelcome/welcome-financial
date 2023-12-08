@@ -16,32 +16,46 @@ const Header = () => {
   return (
     <>
       <Container fluid>
-        <Row className="headerTitle">Welcome Financial Company</Row>
-        <Row className="headerSubtitle">Welcome To Your Financial Future</Row>
+        <Row className="headerTitle d-none d-lg-flex">
+          Welcome Financial Company
+        </Row>
+        <Row className="headerSubtitle d-none d-lg-flex">
+          Welcome To Your Financial Future
+        </Row>
         {location.pathname === "/" ? (
           <>
             <Row className="center" lg="auto">
-              <Button
-                className="getStartedButton"
-                variant="outline-dark"
-                onClick={() => {
-                  navigate("/contact");
-                }}
-              >
-                <Container fluid>
-                  <Row>
-                    <Col>
-                      <hr className="buttonHr" />
-                    </Col>
-                    <Col lg="auto" className="center">
-                      GET STARTED
-                    </Col>
-                    <Col>
-                      <hr className="buttonHr" />
-                    </Col>
-                  </Row>
-                </Container>
-              </Button>
+              <Col />
+              <Col md="4" sm="5" xs="8">
+                <Button
+                  className="getStartedButton"
+                  variant="outline-dark"
+                  onClick={() => {
+                    navigate("/contact");
+                  }}
+                >
+                  <Container fluid>
+                    <Row>
+                      <Col className="center">
+                        <hr className="buttonHr" />
+                      </Col>
+                      <Col
+                        lg="auto"
+                        md="auto"
+                        sm="auto"
+                        xs="auto"
+                        className="center"
+                      >
+                        GET STARTED
+                      </Col>
+                      <Col className="center">
+                        <hr className="buttonHr" />
+                      </Col>
+                    </Row>
+                  </Container>
+                </Button>
+              </Col>
+              <Col />
             </Row>
           </>
         ) : (

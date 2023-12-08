@@ -9,3 +9,26 @@
 .footerFont {
   opacity: 75%;
 }
+
+/* xxs screens */
+@media only screen and (min-width: 1px) and (max-width: 379.98px) {
+  .footerFont {
+    opacity: 75%;
+    font-size: xx-small;
+  }
+}
+
+/* xs screens */
+@media only screen and (min-width: 380px) and (max-width: 575.98px) {
+  .footerFont {
+    opacity: 75%;
+    font-size: small;
+  }
+}
+
+/* s screens and up*/
+@media only screen and (min-width: 576px) {
+  .footerFont {
+    opacity: 75%;
+  }
+}

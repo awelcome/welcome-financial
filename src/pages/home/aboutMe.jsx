@@ -1,4 +1,5 @@
 import "../../common.css";
+import "./aboutMe.css";
 
 import React from "react";
 
@@ -14,10 +15,10 @@ const AboutMe = () => {
     <>
       <Container fluid style={{ backgroundColor: "black", color: "white" }}>
         <Row className="center">
-          <Col lg="7" style={{ paddingRight: "3%" }}>
+          <Col lg="6" style={{ paddingRight: "3%" }}>
             <Container>
               <Row style={{ alignItems: "center" }}>
-                <Col lg="4" className="center">
+                <Col lg="auto" className="center intro">
                   <h1>Hi, I'm Tony</h1>
                 </Col>
                 <Col>
@@ -32,7 +33,8 @@ const AboutMe = () => {
                   age, taking my first job at 14 and was financially independent
                   by the age of 17. Through research, helping others, and my own
                   financial experiences, I've gained firsthand knowledge of the
-                  challenges and rewards of financial education.
+                  challenges and rewards of financial education and I've now
+                  been helping people get a hold on their finances for a decade.
                 </p>
 
                 <p>
@@ -65,17 +67,10 @@ const AboutMe = () => {
               </Row>
             </Container>
           </Col>
-          <Col lg="4">
-            <Image
-              src={selfPic}
-              alt="Self"
-              style={{
-                width: "70%",
-                height: "auto",
-                display: "block",
-                overflow: "hidden",
-              }}
-            />
+          <Col lg="5" xl="4">
+            <Container>
+              <Image src={selfPic} alt="Self" className="selfImage" />
+            </Container>
           </Col>
         </Row>
       </Container>

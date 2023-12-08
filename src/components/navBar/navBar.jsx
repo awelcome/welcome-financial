@@ -20,10 +20,14 @@ const NavBar = () => {
 
   return (
     <>
-      <Navbar bg="light" expand="lg" style={{ height: "8vh" }}>
+      <Navbar collapseOnSelect bg="light" expand="lg" className="myNavBar">
         <Container>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Brand className="d-lg-none navBarBrand">
+            Welcome Financial Company
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
+          <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <NavLink
                 className={({ isActive }) =>
