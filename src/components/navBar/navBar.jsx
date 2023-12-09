@@ -2,12 +2,10 @@
 import "./navBar.css";
 
 // React
-import React, { Component } from "react";
+import React, { useState } from "react";
 
 // React Bootstrap
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { Container, Nav, Navbar } from "react-bootstrap";
 
 // React Router
 import { Outlet, NavLink, useLocation } from "react-router-dom";
@@ -17,23 +15,34 @@ import Header from "../header/header";
 
 const NavBar = () => {
   let location = useLocation();
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <>
-      <Navbar collapseOnSelect bg="light" expand="lg" className="myNavBar">
+      <Navbar
+        collapseOnSelect
+        bg="light"
+        expand="lg"
+        className="myNavBar"
+        expanded={expanded}
+      >
         <Container>
-          <Navbar.Brand className="d-lg-none navBarBrand">
+          <Navbar.Brand className="d-lg-none navBarBrand" href="/">
             Welcome Financial Company
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            onClick={() => setExpanded(!expanded)}
+          />
 
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="me-auto" onSelect={() => setExpanded(false)}>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "activeNavLink" : "navBarLink"
                 }
                 to={""}
+                onClick={() => setExpanded(false)}
               >
                 ABOUT ME
               </NavLink>
@@ -42,6 +51,7 @@ const NavBar = () => {
                   isActive ? "activeNavLink" : "navBarLink"
                 }
                 to={"services"}
+                onClick={() => setExpanded(false)}
               >
                 SERVICES
               </NavLink>
@@ -50,6 +60,7 @@ const NavBar = () => {
                   isActive ? "activeNavLink" : "navBarLink"
                 }
                 to={"contact"}
+                onClick={() => setExpanded(false)}
               >
                 LET'S TALK
               </NavLink>

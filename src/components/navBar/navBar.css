@@ -35,28 +35,7 @@
   }
 
   .navBarBrand {
-    font-size: 1.2rem;
-  }
-
-  .navBarLink {
-    margin-right: 70px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-family: "EB Garamond", serif;
-    font-size: 20px;
-    text-decoration: none;
-    color: gray;
-  }
-
-  .activeNavLink {
-    margin-right: 70px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-family: "EB Garamond", serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
+    font-size: 1.1rem;
   }
 }
 
@@ -70,27 +49,6 @@
   .navBarBrand {
     font-size: 1.3rem;
   }
-
-  .navBarLink {
-    margin-right: 70px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-family: "EB Garamond", serif;
-    font-size: 20px;
-    text-decoration: none;
-    color: gray;
-  }
-
-  .activeNavLink {
-    margin-right: 70px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-family: "EB Garamond", serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 1200px) {
@@ -102,26 +60,5 @@
 
   .navBarBrand {
     font-size: 2rem;
-  }
-
-  .navBarLink {
-    margin-right: 70px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-family: "EB Garamond", serif;
-    font-size: 20px;
-    text-decoration: none;
-    color: gray;
-  }
-
-  .activeNavLink {
-    margin-right: 70px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-family: "EB Garamond", serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
   }
 }
