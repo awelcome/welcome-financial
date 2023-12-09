@@ -44,7 +44,7 @@ const Contact = (props) => {
     setValidated(true);
 
     // Uncomment when ready to take form events
-    // formSubmit(event);
+    formSubmit(event);
   };
 
   return (
