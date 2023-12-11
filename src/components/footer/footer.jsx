@@ -13,7 +13,7 @@ const Footer = () => {
   const navigate = useNavigate();
   return (
     <>
-      <Container fluid style={{ height: "8vh", marginBottom: "70px"}}>
+      <Container fluid style={{ height: "8vh", marginBottom: "70px" }}>
         <Row className="center">
           <Col />
           <Col lg="10">
@@ -22,8 +22,8 @@ const Footer = () => {
           <Col />
         </Row>
         <Row className="center footerFont">
-          Copyright © {new Date().getFullYear()} Welcome Financial LLC. - All
-          Rights Reserved.
+          {/* Copyright © {new Date().getFullYear()} */}
+          Welcome Financial LLC. - All Rights Reserved.
         </Row>
         <Row className="legalButtons footerFont">
           <Col lg="auto">
