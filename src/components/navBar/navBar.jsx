@@ -68,7 +68,7 @@ const NavBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      {location.pathname != "/privacy-policy" &&
+      {location.pathname !== "/privacy-policy" &&
       location.pathname !== "/client-agreement" ? (
         <>
           <Header />
