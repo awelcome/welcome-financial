@@ -120,8 +120,8 @@ const Contact = (props) => {
                 name="email"
               />
               <Form.Text className="text-muted">
-                I'll never share your email with anyone else, it will only be
-                used to contact you.
+                I'll never share your email with anyone else except those listed
+                in the Client Agreement, it will only be used to contact you.
               </Form.Text>
             </Form.Group>
           </Row>

@@ -31,10 +31,13 @@ const AboutMe = () => {
                   growth, and I'm dedicated to your financial success. My
                   journey in the world of personal finance began at an early
                   age, taking my first job at 14 and was financially independent
-                  by the age of 17. Through research, helping others, and my own
-                  financial experiences, I've gained firsthand knowledge of the
-                  challenges and rewards of financial education and I've now
-                  been helping people get a hold on their finances for a decade.
+                  by the age of 17. I'm currently attending Texas Tech
+                  University where I'm studying to obtain my Masters of Science
+                  in Personal Financial Planning. But it is through research, helping
+                  others, and my own financial experiences, that I've gained
+                  firsthand knowledge of the challenges and rewards of financial
+                  education and I've now been helping people get a hold on their
+                  finances for a decade.
                 </p>
 
                 <p>

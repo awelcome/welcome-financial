@@ -30,7 +30,7 @@ const Services = () => {
         <Service
           name="Financial Wellness Program"
           price="$125/month"
-          description="Completely customized program about your financial health wrapped into a 4 month package. Includes most services listed below. We'll meet several times, go over various topics, and keep an open line of communication! More details coming soon"
+          description="Completely customized program about your financial health. Includes most services listed below. We'll meet several times, go over various topics, and keep an open line of communication! Contact me for more details."
         />
         <Service
           name="1-Hour Coaching Session"
