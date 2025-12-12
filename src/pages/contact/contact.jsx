@@ -16,7 +16,7 @@ const Contact = (props) => {
   const [selectedService, setSelectedService] = useState();
   const [validated, setValidated] = useState(false);
   const [state, formSubmit] = useForm(
-    process.env.REACT_APP_FORMSPREE_ENDPOINT_CODE
+    import.meta.env.VITE_FORMSPREE_ENDPOINT_CODE
   );
 
   useEffect(() => {
