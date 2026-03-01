@@ -8,7 +8,7 @@ import React, { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
 // React Router
-import { Outlet, NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 // My Components
 import Header from "../header/header";
@@ -69,15 +69,7 @@ const NavBar = () => {
         </Container>
       </Navbar>
       {location.pathname !== "/privacy-policy" &&
-      location.pathname !== "/client-agreement" ? (
-        <>
-          <Header />
-        </>
-      ) : (
-        <></>
-      )}
-
-      <Outlet />
+      location.pathname !== "/client-agreement" && <Header />}
     </>
   );
 };

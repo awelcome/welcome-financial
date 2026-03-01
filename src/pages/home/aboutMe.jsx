@@ -13,11 +13,11 @@ import selfPic from "./DSC_9011.jpg";
 const AboutMe = () => {
   return (
     <>
-      <Container fluid style={{ backgroundColor: "black", color: "white" }}>
+      <Container fluid className="about-me-section">
         <Row className="center">
-          <Col lg="6" style={{ paddingRight: "3%" }}>
+          <Col lg="6" className="about-me-content">
             <Container>
-              <Row style={{ alignItems: "center" }}>
+              <Row className="about-me-intro-row">
                 <Col lg="auto" className="center intro">
                   <h1>Hi, I'm Tony</h1>
                 </Col>
@@ -72,7 +72,7 @@ const AboutMe = () => {
           </Col>
           <Col lg="5" xl="4">
             <Container>
-              <Image src={selfPic} alt="Self" className="selfImage" />
+              <Image src={selfPic} alt="Tony, financial advisor and coach at Welcome Financial Company" className="selfImage" />
             </Container>
           </Col>
         </Row>

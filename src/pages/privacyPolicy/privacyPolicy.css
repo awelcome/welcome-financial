@@ -2,3 +2,13 @@
   color: black;
   opacity: 1;
 }
+
+/* Align lists with paragraph text */
+.privacy-policy-content ul {
+  margin: 0.25rem 0 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.privacy-policy-content p + ul {
+  margin-top: 0.25rem;
+}

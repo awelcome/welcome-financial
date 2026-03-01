@@ -2,10 +2,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // My components
+import Layout from "./components/layout/Layout";
 import Home from "./pages/home/home";
 import NotFound from "./pages/notFound/notFound";
-import NavBar from "./components/navBar/navBar";
-import Footer from "./components/footer/footer";
 import Contact from "./pages/contact/contact";
 import PrivacyPolicy from "./pages/privacyPolicy/privacyPolicy";
 import Services from "./pages/services/services";
@@ -15,12 +14,7 @@ import ErrorPage from "./pages/errorPage/errorPage";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <div>
-        <NavBar />
-        <Footer />
-      </div>
-    ),
+    element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
       {

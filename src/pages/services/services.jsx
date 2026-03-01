@@ -1,20 +1,13 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
+import "./service.css";
 import Row from "react-bootstrap/Row";
 import Heading from "../../components/heading/heading";
 import Service from "./service";
 
 const Services = () => {
   return (
-    <Container
-      fluid
-      style={{
-        backgroundColor: "black",
-        color: "white",
-        marginTop: "50px",
-        paddingBottom: "50px",
-      }}
-    >
+    <Container fluid className="services-section">
       <Container>
         <Row className="center">
           <Heading dark text="Services and Pricing" />

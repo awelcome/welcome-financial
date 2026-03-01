@@ -1,3 +1,10 @@
+.services-section {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-light);
+  margin-top: var(--spacing-section);
+  padding-bottom: var(--spacing-section);
+}
+
 .serviceLink {
   padding: 5px;
   border: 1px solid transparent;

@@ -23,7 +23,15 @@
   color: gray;
 }
 
+.navBarLink:focus-visible {
+  color: black;
+}
+
 .activeNavLink:hover {
+  color: black;
+}
+
+.activeNavLink:focus-visible {
   color: black;
 }
 
