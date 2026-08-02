@@ -1,5 +1,5 @@
 // React Router
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router";
 
 // My components
 import Layout from "./components/layout/Layout";
